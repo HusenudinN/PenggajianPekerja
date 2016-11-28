@@ -21,7 +21,7 @@ public class Pegawai extends JInternalFrame implements ActionListener,
             lblAlt = new JLabel ("Alamat"),
             lblJk = new JLabel ("Jenis Kelamin"),
             lblAgama = new JLabel ("Agama"),
-            lblStatus = new JLabel ("Status Perkawinan");
+            lblStatus = new JLabel ("Status Pernikahan");
     private JTextField txtNIP = new JTextField (),
             txtNama = new JTextField (),
             txtAlt = new JTextField ();
@@ -54,8 +54,8 @@ public class Pegawai extends JInternalFrame implements ActionListener,
     
     // Input Status Perkawinan
     cmbStatus.addItem("");
-    cmbStatus.addItem("Kawin");
-    cmbStatus.addItem("Belum Kawin");
+    cmbStatus.addItem("Menikah");
+    cmbStatus.addItem("Belum Menikah");
     
     /*Mengatur letak objek Label di Container */
     lblNIP.setBounds(15, 20, 100, 25);
@@ -156,7 +156,7 @@ public class Pegawai extends JInternalFrame implements ActionListener,
     /*Jika NIP Pegawai Ditemukan di Tabel Pegawai*/
                 txtNIP.setText(rs1.getString("nip"));
                 txtNama.setText(rs1.getString("namapeg"));
-                txtAlt.setText(rs1.getString("alpeg"));
+                txtAlt.setText(rs1.getString("altpeg"));
                 cmbJK.setSelectedItem(rs1.getString("jkpeg"));
                 cmbAgama.setSelectedItem(rs1.getString("agama"));
                 cmbStatus.setSelectedItem(rs1.getString("statuspeg"));

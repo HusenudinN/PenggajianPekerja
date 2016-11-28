@@ -235,7 +235,9 @@ public class MenuUtama extends JFrame implements ActionListener{
                 */
             }
             if (obj == mnuFTPenempatan || obj == mnuBtnFTPenempatan){
-                /*belum diisi*/
+                Formpenempatan FMTempat = new Formpenempatan();
+                desktop1.add(FMTempat);
+                FMTempat.show();
             }
             if (obj == mnuFTGaji || obj == mnuBtnFTGaji){
                 /*belum diis*/
